@@ -8,19 +8,19 @@ A commonly and extensively used arduino circuit board can be seen in the below p
 
 {IMAGE CREDITS - VSDIAT}
 
-![alt text](image.png)
+![image](https://github.com/user-attachments/assets/c18a72f1-1e75-4fba-9bdc-fb5a51925941)
 
 The encircled region, however is only a high level view, which can be represented through a block diagram, as shown below:
 
 {IMAGE CREDITS - VSDIAT}
 
-![alt text](image-1.png)
+![image](https://github.com/user-attachments/assets/40e9d693-6e9f-4bb6-abb9-2e1500ba7358)
 
 In the picture, we are able to see a large box which represents, as written a SoC. In layman's terms, this often called a "CHIP". However, in technicality it is termed as a "PACKAGE". One kind of package, which is used in the arduino board is a QFN - 48 package (Quad Flat No-Leads). A package can be schematically represented as below:
 
 {IMAGE CREDITS - VSDIAT}
 
-![alt text](image-2.png)
+![image](https://github.com/user-attachments/assets/4fc5973d-d15c-49b1-9b2b-28af92892e02)
 
 As seen, a chip is actually inside a package, and is connected to various "PINS" or inputs/outputs. The locations of the pins and what they are are usually driven by the design of the PCB. A chip is also a very complex system, and has various components such as -: 
 
@@ -37,19 +37,14 @@ Two schematics encompassing all of the above components can be seen below:
 
 {IMAGE CREDITS - VSDIAT}
 
-![alt text](image-3.png)
-
-{IMAGE CREDITS - VSDIAT}
-
-![alt text](image-4.png)
+![image](https://github.com/user-attachments/assets/a77af64a-c7ce-458b-b1ed-4979e9e78bd3)
 
 ### Introduction to RISC V
 RISC-V Instruction Set Architechture, commonly called RISC V ISA, is the language of the computer. When a C program is to be run on a piece of hardware, it is first compiled in an assembly language program like RISC V. It is then converted to machine language i.e. binary and subsequently implemented in the form of a hardware description language such as picorv32 cpu core. A schematic is shown below, representing the same: 
 
 {IMAGE CREDITS - VSDIAT}
 
-![alt text](image-5.png)
-
+![image](https://github.com/user-attachments/assets/4c76209c-d7c9-4a42-bdc4-96757c91a1c0)
 
 ### From Software Applications to Hardware
 Application Software, or apps. They run on hardware such as laptops, mobile phones, tablets etc that are powered by chips. However, apps are coded in complex application programs that require conversion into binary or machine language for running. This is done through system software, which majorly consists of 
@@ -60,7 +55,7 @@ Application Software, or apps. They run on hardware such as laptops, mobile phon
 
 {IMAGE CREDITS - VSDIAT}
 
-![alt text](image-6.png)
+![image](https://github.com/user-attachments/assets/08efbb7e-3f62-4163-9252-32a16b5198ae)
 
 ## SoC Design and OpenLANE
 
@@ -76,13 +71,11 @@ However, until June of 2020, there was no OPENSOURCE available PDK data, making 
 
 130 nm chips are also not slow, as verified by intel and OSU-:
 
-{IMAGE CREDITS - VSDIAT}
-
-![alt text](image-7.png)
+![image](https://github.com/user-attachments/assets/99c2652d-f92a-4379-ab9e-ae4b9e5ab99e)
 
 {IMAGE CREDITS - VSDIAT}
 
-![alt text](image-8.png)
+![image](https://github.com/user-attachments/assets/d9d967c9-2ac1-42fe-978b-da8d1b4d32ed)
 
 ### Simplified RTL to GDS flow
 The RTL to GDSII  ( Register Transfer Level to Graphic Design System II) design process takes many steps, that are -:
@@ -91,29 +84,29 @@ The RTL to GDSII  ( Register Transfer Level to Graphic Design System II) design 
 
 {IMAGE CREDITS - VSDIAT}
 
-![alt text](image-9.png)
+![image](https://github.com/user-attachments/assets/dd0dd8fa-a04d-4de7-a318-275f8ec9d7f3)
 
 - Floor Planning involves optimizing chip performance, area utilization, and connectivity through spatial arrangements (i.e. the layout and placement of various components)The three main purposes of floor planning are firstly, minimizing wire lengths, secondly, reducing signal delays, thirdly, optimizing power distribution, and fourthly, ensuring efficient chip utilization. Power Planning aims to ensure stable and reliable power delivery to all components by effective distribution and design of power supplies and power distribution networks (PDN). The main purposes of this are minimizing voltage drop and noise, reducing power distribution network (PDN) resistances and capacitances, and ensuring uniform power distribution throughout. Usually the chip is powered through VDD pads which are connected to various components through parallel rectangular strips causing lesser resistance.
 
 {IMAGE CREDITS - VSDIAT}
 
-![alt text](image-10.png)
+![image](https://github.com/user-attachments/assets/251ae097-c169-4fb3-a1af-99b5e400d89f)
 
 {IMAGE CREDITS - VSDIAT}
 
-![alt text](image-11.png)
+![image](https://github.com/user-attachments/assets/c3a16ce6-5322-41d7-bfa9-8dedcde971e8)
 
 Placement - it is the process of determing where a component will be placed on the chip. The components can include standard cells, macros, and I/O pads. The cells are usually placed on floorplan rows, and are aligned with the sites. There are majorly two steps - global and detailed.
 
 {IMAGE CREDITS - VSDIAT}
 
-![alt text](image-13.png)
+![image](https://github.com/user-attachments/assets/673f7f27-5d78-4cef-93be-7db872074f52)
 
 Clock Tree Synthesis - This step is done before routing, because the clock needs to be routed by delivering the clock to all sequential elements.
 
 {IMAGE CREDITS - VSDIAT}
 
-![alt text](image-14.png)
+![image](https://github.com/user-attachments/assets/57940fb0-e2f4-47c1-ac1f-a616b0bcd7a4)
 
 * Routing - The determination of the interconnections of the components throught the various metal layers, whose thickness, pitch etc is detailed by the PDK. The SKY130 has 6 layers.
 
@@ -130,31 +123,31 @@ OpenLANE is an open-source digital ASIC jointly developed by efabless and Google
 
 {IMAGE CREDITS - VSDIAT}
 
-![alt text](image-15.png)
-![alt text](image-16.png)
+![image](https://github.com/user-attachments/assets/2251419d-e406-41e4-9e43-66ac0ea4ba03)
+![image](https://github.com/user-attachments/assets/6a2632ce-594c-44f2-ac9a-b42f78daf862)
 
 ## ASIC Design flow.
 
-![alt text](image-17.png)
+![image](https://github.com/user-attachments/assets/ef0b7268-48d1-4034-8217-9ee95d3e8f7f)
 
 * Synthesis Exploration - it generates a delay vs area report.
-{IMAGE CREDITS - VSDIAT} 
+{IMAGE CREDITS - VSDIAT}
 
-![alt text](image-20.png)
+![image](https://github.com/user-attachments/assets/3a6764f5-58ce-4308-848b-8cf0286f84e8)
 
 * Design Exploration - sweeps design configuration and subsequently find best configuration for any given design. It produces a report as shown:
 
-![alt text](image-24.png)
+![image](https://github.com/user-attachments/assets/85d7e4a9-2dc5-42f7-9e36-b2e0b95183b0)
 
 * OpenLANE Regression Testing
 {IMAGE CREDITS - VSDIAT} 
 
-![alt text](image-22.png)
+![image](https://github.com/user-attachments/assets/ba40c7b1-75f7-4503-9c47-35bd7fd48580)
 
 * Design for Test (also k/a DFT)
 {IMAGE CREDITS - VSDIAT}
 
-![alt text](image-23.png)
+![image](https://github.com/user-attachments/assets/670713c4-938f-442b-949a-f1153b6ee839)
 
 * Physical verification (DRC & LVS) - Magic is used for DRC and Magic and Netgen for LVS.
 
@@ -164,17 +157,17 @@ OpenLANE is an open-source digital ASIC jointly developed by efabless and Google
 
 {IMAGE CREDITS - VSDIAT}
 
-![alt text](image-25.png)
+![image](https://github.com/user-attachments/assets/d19ef831-927f-428a-9d44-d3e1e7e21581)
 
 {IMAGE CREDITS - VSDIAT}
 
-![alt text](image-26.png)
+![image](https://github.com/user-attachments/assets/b789f5e7-c22d-43ff-84da-74b049b3a101)
 
 * Timing Analysis (STA) - Here, the input also contains a synthesized netlist along with other data.
 
 {IMAGE CREDITS - VSDIAT}
 
-![alt text](image-28.png)
+![image](https://github.com/user-attachments/assets/b0ffc24a-06f6-41a1-a087-5259fe47a8da)
 
 Get Familiar to Opensource EDA tools
 OpenLANE Directory Structure in Detail
@@ -185,19 +178,19 @@ Exploring OpenSource directory through Linux terminal steps:-
 * Open the virtual machine and then open terminal on it.
 {IMAGE CREDITS: AUTHOR}
 
-![alt text](image-29.png)
+![image](https://github.com/user-attachments/assets/526471d5-6df1-480f-a87f-a7e4d182c5d1)
 
 * Type cd Desktop and then cd work/tools to change directory to Desktop/work/tools, as this is where all openlane files are stored.
 {IMAGE CREDITS: AUTHOR}
 
-![alt text](image-30.png)
+![image](https://github.com/user-attachments/assets/fcc36705-0d3d-4404-951c-9fdcb38f2049)
 
 * After changing directory, type ls -ltr to list the contents of the directory.
 Side note: ltr represents how the list of contents should be ordered . To find other ways, type ls --help.
 
 {IMAGE CREDITS: AUTHOR}
 
-![alt text](image-31.png)
+![image](https://github.com/user-attachments/assets/2920b3c0-1085-40b6-a901-323a285b7b41)
 
 * In this workshop, we are going to use openlane_working_dir, and hence we will change directory to it by typing cd openlane_working_dir. Afterwards, we list the contents using the same ls -ltr. In this workshop, we are going to use pdks and openlane directories and hence we will explore both in sequence.
 
@@ -205,76 +198,71 @@ Side note: ltr represents how the list of contents should be ordered . To find o
 
 {IMAGE CREDITS: AUTHOR}
 
-![alt text](image-32.png)
+![image](https://github.com/user-attachments/assets/8da8c35c-ca0b-429e-a73a-3ec976cac594)
 
 * libs.tech contains all tool specific files. As seen in the picture - tools like Qflow, netgen, magic etc have directories. Opening the magic directory in libs.tech, we can see the following files:
 {IMAGE CREDITS: AUTHOR}
 
-![alt text](image-33.png)
-![alt text](image-34.png)
+![image](https://github.com/user-attachments/assets/1e9a2208-276b-4dce-b4a2-3f9fbc71cc42)
 
 * libs.ref contains all the technology/foundry related processes. Upon further exploration of sky130_fd_sc_hd, we see the following
 cd .. reverses the directory one step behind to the parent directory.cd
 
 {IMAGE CREDITS: AUTHOR}
 
-![alt text](image-35.png)
+![image](https://github.com/user-attachments/assets/130864ff-9ceb-4d48-b256-eb076eae8ee1)
 
 {IMAGE CREDITS: AUTHOR}
 
-![alt text](image-36.png)
+![image](https://github.com/user-attachments/assets/4cc9668e-d716-4a4e-9b21-a52d9c7916af)
 
 * Next, we will open openlane
-{IMAGE CREDITS: AUTHOR}\
+{IMAGE CREDITS: AUTHOR}
 
-![alt text](image-37.png)
+![image](https://github.com/user-attachments/assets/86bd7635-c96d-42a3-b4dd-4725ce7bd065)
+
 
 ## Design Preparation Step
 To open Openlane, we can use the docker command using interactive. After invoking the docker command, the prompt changes to bash-4.2$, and then one must type ls -lrth, and subsequently ./flow.tcl -interactive package require openlane 0.9 retrives all the required information for openlane.
 
 {IMAGE CREDITS: AUTHOR}
 
-![alt text](image-38.png)
-![alt text](image-39.png)
+![image](https://github.com/user-attachments/assets/6443de96-cd33-4fd4-8970-cae3ac42579f)
 
 OpenLane has various designs and we are most interested in picorv32a Inside the designs folder there is document named config.tcl which overrides the default settings. These configurations are design specific.(e.g. clock period, clock port, verilog files).
 
 {IMAGE CREDITS: AUTHOR}
 
-![alt text](image-43.png)
+![image](https://github.com/user-attachments/assets/eae3d985-153b-411e-93ec-2c0913007544)
 
 To setup the design of OpenLANE, we first need to prepare the design ensures that the final product functions correctly and reliably through prep -design picorv32a, which gives the following result.
 
 {IMAGE CREDITS: AUTHOR}
 
-![alt text](image-44.png)
-![alt text](image-45.png)
-![alt text](image-46.png)
+![image](https://github.com/user-attachments/assets/34bbf2ad-3794-4546-a54d-2941e0522951)
 
 The command when run, sets up a filesystem where the OpenLANE can store the results. This creates a folder inside the picorv32a directory which contains the command log files, results, and the reports dumped of the various tool. The folder will be only have the lef files generated by this design setup stage. The cell LEF files .lef and technology LEF files .tlef merge to generate merged.lef inside runs/tmp/, wherein a a folder with today's date will be created, inside which a tmp folder will have contents, and the merged.lef folder will contain the merged lef files.
 
 {IMAGE CREDITS: AUTHOR}
 
-![alt text](image-47.png)
+![image](https://github.com/user-attachments/assets/38aa6d1c-da43-45ca-8700-4cac1e193f1e)
 
 {IMAGE CREDITS: AUTHOR}
 
-![alt text](image-48.png)
+![image](https://github.com/user-attachments/assets/e522f23a-7b59-48d8-9974-d4320cc6eefa)
 
 PROGRESS SO FAR:
 
 {IMAGE CREDITS: AUTHOR}
 
-![alt text](image-49.png)
-![alt text](image-50.png)
-![alt text](image-51.png)
+![image](https://github.com/user-attachments/assets/9bf2735c-320d-4f97-bfc9-495d910866b2)
 
 Review Files After Design Prep and Run Synthesis
 Opening the merged.lef file through the less command after design prep will give one a document as shown:
 
 {IMAGE CREDITS: AUTHOR}
 
-![alt text](image-52.png)
+![image](https://github.com/user-attachments/assets/fc46f192-07e9-40cf-9cc7-a2d3f59822f1)
 
 After this, type the command run_synthesis to run synthesis which converts an abstract netlist into a program to run yosys RTL synthesis, ABC scripts (for technology mapping) and openSTA. This process will take about 5-6 minutes, depending on system speed.
 
@@ -287,19 +275,21 @@ Solving this through our data, we get => 1613/18036*100 = 8.94%
 
 {IMAGE CREDITS: AUTHOR}
 
-![alt text](image-53.png)
+![image](https://github.com/user-attachments/assets/f493ebee-8bdd-45e5-9ea2-3b732faf1cf5)
 
 After this, one may look at the results of the synthesis through hte picorv32a.synthesis.v file, which can be found as shown, and then viewed through the less command.
 
 {IMAGE CREDITS: AUTHOR}
 
-![alt text](image-55.png)
+![image](https://github.com/user-attachments/assets/dff5f7c6-a6b1-43b3-9cc2-96541184d48b)
+
+## Day 2
 
 The first step in physical design is to define the width and height of the core and die: Beginning with a very simple netlist, that can extrapolated later we will first draw a basic diagram in the form of symbols that we will later convert into physical designs. We will take each cell (gates, specific cell like flip flop) and give it a standard (although rough for now) dimensions. As an example here, each unit will be 1 unit x 1 unit - i.e. 1 sq. unit in size, and since there are 4 gates/flip-flops here, the total size of the silicon wafer will 4 sq. units.
 
 {IMAGE CREDITS: VSDIAT}
 
-![alt text](image-56.png)
+![image](https://github.com/user-attachments/assets/d32415f7-b6f9-4c09-a170-6640ef2e4bf0)
 
 > NOTE : here, we are ignoring the wires
 
@@ -308,7 +298,7 @@ All logical cells will be placed inside the core - which is part of the die. If 
 Example: 
 {IMAGE CREDITS: VSDIAT}
 
-![alt text](image-57.png)
+![image](https://github.com/user-attachments/assets/29a6ae43-f2d9-4ca3-afaf-7bf3775729c5)
 
 Utilisation factor = 50 %
 
@@ -321,19 +311,19 @@ Pre-Placed cells are complex logic blocks that can be reused. They are already i
 
 {IMAGE CREDITS: VSDIAT}
 
-![alt text](image-58.png)
+![image](https://github.com/user-attachments/assets/d5cee92b-7763-4aa2-8cc0-c63dd1f6759b)
 
 {IMAGE CREDITS: VSDIAT ; SCREENSHOT TAKEN FROM LECTURE}
 
-![alt text](image-59.png)
+![image](https://github.com/user-attachments/assets/4f8df4f8-fe16-46d3-9672-d0b00089ce60)
 
 {IMAGE CREDITS: VSDIAT ; SCREENSHOT TAKEN FROM LECTURE}
 
-![alt text](image-60.png)
+![image](https://github.com/user-attachments/assets/bafeec4c-d410-4c66-8051-772f7be9bc88)
 
 {IMAGE CREDITS: VSDIAT ; SCREENSHOT TAKEN FROM LECTURE}
 
-![alt text](image-61.png)
+![image](https://github.com/user-attachments/assets/0b12733a-0f5f-45c1-84af-13685daded3b)
 
 ## De-Coupling Capacitors
 
@@ -353,13 +343,13 @@ Take the above netlist as an example needing to be implemented. The information 
 
 {IMAGE CREDITS: VSDIAT}
 
-![alt text](image-62.png)
+![image](https://github.com/user-attachments/assets/91875173-3454-4370-aa0f-cf5d410b8e6f)
 
 After the pin placement, we create Logical Cell Placement Blockage to ensure that the APR tool does not place any cell on the pin locations.
 
 {IMAGE CREDITS: VSDIAT}
 
-![alt text](image-63.png)
+![image](https://github.com/user-attachments/assets/1940cd7f-824c-490b-9787-06ffed7a7bad)
 
 ## Steps to Run Floorplan Using OpenLANE
 
@@ -367,7 +357,7 @@ After the pin placement, we create Logical Cell Placement Blockage to ensure tha
 
 {IMAGE CREDITS: AUTHOR}
 
-![alt text](image-64.png)
+![image](https://github.com/user-attachments/assets/7e1bb517-0d75-4cd9-bceb-348655c809df)
 
 The _README.md_ contains all configuration variables, which are segregated based on stage and the **.tcl** files consists of the default OpenLANE settings.
 
@@ -513,7 +503,8 @@ For SPICE simulation, there are various steps-:
 ### Switching Threshhold Vm
 
 {IMAGE CREDITS: VSDIAT}
-![alt text](image-66.png)
+
+![image](https://github.com/user-attachments/assets/a357bfa5-e4e9-4169-858d-debd83c46470)
 
 POINTS TO BE NOTED:
 
@@ -521,9 +512,6 @@ POINTS TO BE NOTED:
 - The parameters that determine the robustness of the CMOS is the switching threshhold and the propogation delay
 
 The Switching Threshhold is the point where the the input voltage is equal to the output voltage and both PMOS & NMOS are in saturation region. When these are turned on, there is a high chances of leakage and  that the current flows directly from VDD to GND. Due to this, short circuit can be seen.
-
-{IMAGE CREDITS: VSDIAT}
-![alt text](image-67.png)
 
 ### Static and Dynamic Simulation of CMOS Inverter
 
@@ -537,8 +525,6 @@ The steps to gitclone are as follows:
 2. Clone the repository with the custom inverter design through the command _git clone https://github.com/nickson-jose/vsdstdcelldesign_
 3. Subsequently, copy the tech file to the _vsdstdcelldesign_ directory (created through above step) by this command _cp /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign/_
 4. Then, open the custom inverter layout in MAGIC through this command: _magic -T sky130A.tech sky130_inv.mag &_cp__
-
-{IMAGE CREDITS: AUTHOR ; SCREENSHOT TAKEN FROM DEVICE}
 
 ## Inception of Layout and CMOS Fabrication Process
 
@@ -572,7 +558,7 @@ The 16 MASK CMOS Fabrication process is as follows:
 Gate Terminal is where Threshhold Voltage is controled - as seen below:
 
 {IMAGE CREDITS: VSDIAT}
-![alt text](image-68.png)
+![image](https://github.com/user-attachments/assets/ddf47861-53a0-4680-a861-ce41d5ee5f06)
 
 4. Formation of Gate
      + Deposit photo resist layer to define the areas to be protected, and then subsequently deposit mask-4. Then, UV light is applied, and the exposed area of photoresist is removed
@@ -636,24 +622,11 @@ For the SPICE extraction of the custom inverter layout, we can enter the followi
 
 The default SPICE deck file using Sky130 is seen in the previous section 👆. Now, we can modify the file to plot a transient response, which would then create a final SPICE deck file by editing as below.
 
-{IMAGE CREDITS: AUTHOR}
-
-
 To load the SPICE file for simulation in NGSPICE, type the following command : _**ngspice sky130A_inv.spice**_
 
 ### Lab Steps to Characterise Inverter using SKY130 Model Files
 
-After typing this command, you will get a result as follows:-
-
-{IMAGE CREDITS: AUTHOR; SCREENSHOT TAKEN FROM DEVICE}
-
-![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/eb4bf7a0-c3aa-4cd3-b619-6ee5cf335397)
-
-After this, to generate a graph, type the command _**plot y vs time a**_ to generate a plotted graph of the transient analysis through NGSPICE -:
-
-{IMAGE CREDITS: AUTHOR; SCREENSHOT TAKEN FROM DEVICE}
-
-![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/e3e5f0ea-a497-4107-a3f8-efeec27c5424)
+After typing this command you will get outputs.
 
 Using this, we can characterise the cell through four parameters - 
 1. value of rise transition, which is the time taken for an output waveform to transit from a value of 20% of the maximum value to 80% of the maximum value = vdd = 3.3V. 20% of 3.3V is about .66V, and 80% is about 2.64V, and hence we will click on those points, whose x and y values will appear in the terminal.
@@ -1162,8 +1135,6 @@ Then, we must read the def file from the CTS stage
 Subsequently create the db through this command -: write_db pico_cts.db
 
 Then, read the db, verilog files, library and sdc
-{IMAGE CREDITS: }
-
 
 After this, set the propogated clock to calculate the actual delay in the clock path through the command -: set_propogated_clock [all_clocks]
 
@@ -1260,10 +1231,7 @@ In the below algorithm, cost is found for each access point. Then, a minimum spa
 Routing Topology Algorithm and Final Files List Post Route
 After running the run_routing command, routing [both global and detail] is completed. Routing Strategy was set to 0, which meant that DRC violations must be brought down from a high value [25000 in this case] to 0. This takes multiple iterations [34] and nearly 20 minutes to half an hour.
 
-After this, a def file will be formed in the location [runs/[date]/results/routing/picorv32.def], which has to opened in MAGIC -:
-
-{IMAGE CREDITS: AUTHOR}
-![alt text](image-69.png)
+After this, a def file will be formed in the location [runs/[date]/results/routing/picorv32.def], which has to opened in MAGIC.
 
 Parasitic Extraction
 NOTE: OpenLANE does not have any spef extraction tool, so we use a separate tool present in work/tools/ directory.
@@ -1280,7 +1248,8 @@ This uses Magic to stream the GDSII file runs/26-03_05-49/results/magic/picorv32
 
 The last stage is to extract the GDSII file ready for fabrication through run_magic. This uses MAGIC to stream the GDSII file runs/26-03_05-49/results/magic/picorv32a.gds. The GDSII can now be ready by MAGIC :-
 {IMAGE CREDITS: VSDIAT}
-![alt text](image-70.png)
+![image](https://github.com/user-attachments/assets/850f957a-0464-49b8-b6e8-9697e79146ec)
 
 #ASSIGNMENTS COMPLETED!!
-![alt text](image-71.png)
+![image](https://github.com/user-attachments/assets/6e16dac0-e29e-4625-b063-55c589f282b2)
+
